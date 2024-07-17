@@ -1,0 +1,88 @@
+.sidebar {
+    min-width: 14.5em;
+    overflow-y: auto;
+}
+
+.sideBarItem {
+    width: 100%;
+}
+
+.accordion {
+    border-radius: 20px;
+}
+
+.acordionItem {
+    border-radius: 7px;
+    text-align: start;
+    border: none;
+}
+
+.acordionBody {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    border-radius: 100px;
+}
+
+.acordionBodyItem {
+    text-align: start;
+    padding-left: 3em;
+    height: 3em;
+    width: 100%;
+    border-radius: 70px;
+    color: gray;
+}
+
+.acordionBodyItem:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.accordion-button {
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.button {
+    text-align: start;
+    height: 3em;
+    border-radius: 7px;
+    color: white;
+}
+
+.button:hover {
+    color: white;
+    background-color: #007bff;
+}
+
+.collapsed {
+    color: gray;
+}
+
+.collapsed:hover {
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+    color: gray;
+}
+
+.accordion-button:not(.collapsed):hover {
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:hover {
+    background-color: #007bff;
+}
+
+.accordion-button::after {
+    transition: .5s;
+}

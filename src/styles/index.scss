@@ -1,0 +1,12 @@
+@import "./sass/colors";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./sass/nav";
+@import "./sass/main/Sidebar/sideBar";
+@import "./sass/main/mainContainer";
+@import "./sass/main/Dashboard/card";
+@import "./sass/main/Dashboard/cardContainer";
+
+body {
+    background-color: rgba(232, 242, 254, 255);
+}
+
