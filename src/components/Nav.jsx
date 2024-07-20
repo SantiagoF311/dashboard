@@ -27,13 +27,15 @@ export const NavBar = () => {
           EVAHIS
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-between">
+        <Navbar.Collapse id="basic-navbar-nav" className="navItemsContainer">
           <Nav className='navBarButtonContainer'>
-            <NavDropdown title={title} id="basic-nav-dropdown" className='navButton'>
+            <div className='navBarButton'>
+              <NavDropdown title={title} id="basic-nav-dropdown" className='navButton'>
               <NavDropdown.Item className='dropdownItem' as={Link} to={'/'}>None</NavDropdown.Item>
-            </NavDropdown>
+              </NavDropdown>
+            </div>
           </Nav>
-          <Nav className="mx-auto">
+          <Nav className='navLinkContainer'>
             <Nav.Link href="#home">Inicio</Nav.Link>
           </Nav>
           <Nav>

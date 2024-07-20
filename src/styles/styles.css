@@ -11845,7 +11845,7 @@ textarea.form-control-lg {
   }
 }
 .logo-brand {
-  margin-right: 5em;
+  margin-right: 10em;
 }
 
 .navContainer {
@@ -11853,8 +11853,26 @@ textarea.form-control-lg {
   padding-right: 4em;
 }
 
+.navItemsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .navBarButtonContainer {
-  width: 9em;
+  width: 15em;
+}
+
+.navBarButton {
+  width: 65%;
+  transition: width 0.7s ease;
+}
+.navBarButton:hover {
+  width: 100%;
+}
+
+.navLinkContainer {
+  margin-right: 9em;
 }
 
 .navButton {
