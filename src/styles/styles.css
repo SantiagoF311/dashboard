@@ -11863,6 +11863,11 @@ textarea.form-control-lg {
   width: 15em;
 }
 
+.navButton.show .dropdown-toggle,
+.navButton.show .dropdown-toggle:hover {
+  color: white;
+}
+
 .navBarButton {
   width: 65%;
   transition: width 0.7s ease;
@@ -11909,6 +11914,61 @@ textarea.form-control-lg {
 
 .navButton .dropdown-toggle::after {
   display: none;
+}
+
+.menuDropdown .dropdown-menu.show {
+  width: 15em;
+  padding: 0 1em 1em 1em;
+  padding-top: 0;
+  background: rgb(0, 93, 255);
+  background: linear-gradient(0deg, rgb(0, 93, 255) 43%, rgb(79, 196, 255) 93%);
+  border: none;
+}
+
+.navDropDownItem {
+  width: 100%;
+  padding: 1em;
+  border-radius: 10px;
+  background: rgb(0, 93, 255);
+  background: linear-gradient(0deg, rgb(0, 93, 255) 58%, rgb(79, 196, 255) 93%);
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.navDropDownItem:hover {
+  background-color: #007bff;
+}
+.navDropDownItem:focus {
+  background-color: #007bff;
+}
+
+.dropDownItemText {
+  margin: 0;
+  font-size: 1em;
+  color: white;
+}
+
+.userDropDown .dropdown-menu {
+  min-width: 10em;
+  padding: 0;
+  border: none;
+}
+
+.userDropDown .userDropDownItem {
+  width: 100%;
+  padding: 1em;
+  border-radius: 10px;
+  background: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.userDropDown .userDropDownItem:hover {
+  background-color: #258fff;
+}
+.userDropDown .userDropDownItem:focus {
+  background-color: #e9ecef;
 }
 
 .sidebar {
@@ -12007,6 +12067,11 @@ textarea.form-control-lg {
   padding-left: 50px;
   padding-right: 40px;
 }
+@media (max-width: 570px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+}
 
 .cardsContainer {
   padding: 0;
@@ -12027,6 +12092,40 @@ textarea.form-control-lg {
   border: none;
   padding: 1.2em;
   box-sizing: border-box;
+}
+@media (max-width: 1880px) {
+  .card {
+    width: 18em;
+  }
+}
+@media (max-width: 1860px) {
+  .card {
+    width: 14em;
+  }
+}
+@media (max-width: 815px) {
+  .card {
+    width: 13.5em;
+    padding: 1em;
+  }
+}
+@media (max-width: 800px) {
+  .card {
+    width: 13em;
+    padding: 0.5em;
+  }
+}
+@media (max-width: 770px) {
+  .card {
+    width: 11em;
+    padding: 0.5em;
+  }
+}
+@media (max-width: 720px) {
+  .card {
+    width: 100%;
+    padding: 0.5em;
+  }
 }
 
 .cardIcon {

@@ -4,5 +4,9 @@
     gap: 2em;
     padding-left: 50px;
     padding-right: 40px;
+
+    @media (max-width: 570px) {
+        flex-direction: column;
+    }
 }
 

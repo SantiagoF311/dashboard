@@ -17,6 +17,34 @@
     border: none;
     padding: 1.2em;
     box-sizing: border-box;
+
+    @media (max-width: 1880px) {
+            width: 18em;
+        }
+    
+    @media (max-width: 1860px) {
+            width: 14em;
+        }
+
+    @media (max-width: 815px) {
+            width: 13.5em;
+            padding: 1em;
+        }
+
+    @media (max-width: 800px) {
+            width: 13em;
+            padding: .5em;
+        }    
+
+    @media (max-width: 770px) {
+            width: 11em;
+            padding: .5em;
+        }    
+
+    @media (max-width: 720px) {
+            width: 100%;
+            padding: .5em;
+        }    
 }
 
 .cardIcon {
